@@ -2,14 +2,10 @@
 class Place
 {
     private $city;
-    // private $state;
-    // private $stay;
 
-    function __construct($visited_city) //, $visited_state, $stay_length)
+    function __construct($visited_city)
     {
         $this->city = $visited_city;
-        // $this->state = $visited_state;
-        // $this->stay = $stay_length;
     }
 
     function setCity($new_city)
