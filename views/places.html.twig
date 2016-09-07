@@ -1,0 +1,34 @@
+<html>
+<head>
+  <title>Place I Have Been</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Travel Log</h1>
+
+    {% if places is not empty %}
+      <p>These are the places you have been:</p>
+      <ul>
+        {% for place in places %}
+          <li>{{ place.getCity }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+
+    <!-- <form action='/places' method='post'>
+      <label for='city_locale'>Enter a city you have visited:</label>
+      <input id='city_locale' name='city_locale' type='text'> -->
+
+      <!-- <label for='state_locale'>Enter the state the city was in:</label>
+      <input id='state_locale' name='state_locale' type='text'>
+
+      <label for='stay_time'>Enter how long you visited:</label>
+      <input id='stay_time' name='stay_time' type='int'> -->
+
+      <!-- <button type='submit'>Add your places...</button>
+    </form> -->
+
+  </div>
+</body>
+</html>
